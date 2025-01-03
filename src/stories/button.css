@@ -1,0 +1,80 @@
+.storybook-button {
+  display: inline-flex;
+  padding: 0.25rem 1rem;
+  align-items: center;
+  gap: 0.375rem;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  border: 0;
+  font-family: "Inter", Arial, sans-serif;
+  border-radius: 0.25rem;
+  background: none;
+}
+.storybook-button--primary {
+  color: #fffffe;
+  background: var(--bleu, #3c30c4);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.02),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.storybook-button--secondary {
+  background: var(--blanc, #fffffe);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.02),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.storybook-button--outline {
+  border-radius: 0.25rem;
+  border: 1px solid var(--border---dark, #d9d9d9);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.02),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.storybook-button--destructive {
+  border-radius: 0.25rem;
+  background: var(--rouge---light, #fee);
+  color: var(--rouge, #e73f76);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.02),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.storybook-button--constructive {
+  border-radius: 0.25rem;
+  background: var(--vert---light, #f0fff2);
+  color: var(--vert, #3ad47f);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.02),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.storybook-button--small {
+  padding: 10px 16px;
+  font-size: 12px;
+  height: 1.5rem;
+}
+.storybook-button--medium {
+  padding: 0.25rem 1rem;
+  font-size: 14px;
+  height: 2rem;
+}
+.storybook-button--large {
+  padding: 12px 24px;
+  font-size: 16px;
+  height: 2.5rem;
+}
+
+.storybook-button--without-label {
+  padding: 0.25rem;
+}
+
+.storybook-button--medium.storybook-button--without-label {
+  padding: 10px;
+}
+
+.storybook-button--medium.storybook-button--without-label {
+  padding: 11px;
+}
+
+.storybook-button--large.storybook-button--without-label {
+  padding: 12px;
+}
+
+.button-icon {
+  margin-top: 3px;
+}
