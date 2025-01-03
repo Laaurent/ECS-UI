@@ -13,13 +13,13 @@ import { LucideAngularModule, Home } from 'lucide-angular';
     [ngStyle]="{}"
   >
     @if(withIcon){
-    <lucide-icon
-      [img]="icon"
-      class="button-icon"
-      [size]="iconSize"
-    ></lucide-icon>
+      <lucide-icon
+        [img]="icon"
+        class="button-icon"
+        [size]="iconSize"
+      ></lucide-icon>
     } @if(withLabel) {
-    {{ label }}
+      {{ label }}
     }
   </button>`,
   styleUrls: ['./button.css'],
