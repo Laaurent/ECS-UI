@@ -3,7 +3,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { LucideAngularModule, Home } from 'lucide-angular';
 
 @Component({
-  selector: 'storybook-button',
+  selector: 'ecs-button',
   standalone: true,
   imports: [CommonModule, LucideAngularModule],
   template: ` <button
@@ -13,13 +13,13 @@ import { LucideAngularModule, Home } from 'lucide-angular';
     [ngStyle]="{}"
   >
     @if(withIcon){
-      <lucide-icon
-        [img]="icon"
-        class="button-icon"
-        [size]="iconSize"
-      ></lucide-icon>
+    <lucide-icon
+      [img]="icon"
+      class="button-icon"
+      [size]="iconSize"
+    ></lucide-icon>
     } @if(withLabel) {
-      {{ label }}
+    {{ label }}
     }
   </button>`,
   styleUrls: ['./button.css'],

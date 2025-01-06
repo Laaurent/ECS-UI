@@ -1,0 +1,119 @@
+<div class="biv_identification" [class.biv_identification--small]="isSmall">
+  @if(!isSmall){
+  <div class="col col--profile">
+    <div class="profile">
+      <div class="img"></div>
+      <div class="footer">
+        <lucide-icon [name]="iconLeft" size="16" color="#282F4E"></lucide-icon>
+        <lucide-icon
+          [name]="iconSearch"
+          size="16"
+          color="#282F4E"
+        ></lucide-icon>
+        <lucide-icon [name]="iconRight" size="16" color="#282F4E"></lucide-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="col col--identification">
+    <div class="biv_identification__title mb-2">
+      <div class="col">
+        <div class="biv_identifucation__item">
+          <span class="label">N. util.</span>
+          <span class="value">{{ nameUsed }}</span>
+        </div>
+        <div class="biv_identifucation__item">
+          <span class="label">N. nais.</span>
+          <span class="value">{{ birthName }}</span>
+        </div>
+      </div>
+      <div class="pills">1 mois et 7 jours</div>
+    </div>
+    <div class="biv_identification__resume">
+      <div class="col">
+        <div class="biv_identifucation__item">
+          <span class="label">Pr. util.</span>
+          <span class="value">{{ firstnameUsed }}</span>
+        </div>
+        <div class="biv_identifucation__item">
+          <span class="label">Pr. naiss.</span>
+          <span class="value">{{ birthFirstname }}</span>
+        </div>
+      </div>
+      <div class="col">
+        <div class="biv_identifucation__item">
+          <span class="label">Sexe</span>
+          <span class="value">{{ gender }}</span>
+        </div>
+        <div class="biv_identifucation__item">
+          <span class="label">Naiss.</span>
+          <span class="value">{{ birthDate | date : "dd/MM/yyyy" }} </span>
+        </div>
+      </div>
+      <div class="col">
+        <div class="biv_identifucation__item">
+          <span class="label">INS</span>
+          <span class="value">{{ ins }} (NIR)</span>
+        </div>
+        <div class="biv_identifucation__item">
+          <span class="label">IPP</span>
+          <span class="value">{{ ipp }}</span>
+        </div>
+      </div>
+      <div class="col">
+        @if(insIsVerified){
+        <div class="ins">
+          <lucide-icon
+            [name]="iconCheck"
+            size="16"
+            color="#3AD47F"
+          ></lucide-icon>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+  } @else{
+  <div class="col">
+    <div class="biv_identifucation__item biv_identification__title">
+      <span class="value">{{ nameUsed }}</span>
+    </div>
+    <div class="biv_identifucation__item">
+      <span class="label">Né(e) le</span>
+      <span class="value">{{ birthDate | date }} </span>
+    </div>
+  </div>
+  <div class="col">
+    <div class="biv_identifucation__item">
+      <span class="value">{{ age }} ans</span>
+    </div>
+    <div class="biv_identifucation__item">
+      <span class="value">{{ weight }} kg</span>
+    </div>
+  </div>
+  <div class="col">
+    <div class="biv_identifucation__item">
+      <span class="value">LIT {{ bed }}</span>
+    </div>
+    <div class="biv_identifucation__item">
+      <span class="value">{{ date }}</span>
+    </div>
+  </div>
+  <div class="col">
+    <div class="biv_identifucation__item">
+      <span class="label">INS</span>
+      <span class="value">{{ ins }} (NIR)</span>
+    </div>
+    <div class="biv_identifucation__item">
+      <span class="label">IPP</span>
+      <span class="value">{{ ipp }}</span>
+    </div>
+  </div>
+  @if(insIsVerified){
+  <div class="col">
+    <div class="ins">
+      <lucide-icon [name]="iconCheck" size="16" color="#3AD47F"></lucide-icon>
+    </div>
+  </div>
+  } }
+</div>

@@ -1,0 +1,50 @@
+<div class="biv_allergy">
+  <div class="column">
+    <div class="row">
+      <lucide-icon [name]="stethoscope" size="16" color="#7A8C96"></lucide-icon>
+      <span>Latex, Penicilinen, lode...</span>
+    </div>
+    <div class="row danger">
+      <lucide-icon [name]="circleAlert" size="16" color="#e73f76"></lucide-icon>
+      <span>Escherichia coli</span>
+    </div>
+    @if(!isSmall){
+    <div class="row">
+      <lucide-icon [name]="scanHeart" size="16" color="#7A8C96"></lucide-icon>
+      <span>Sans résidus</span>
+    </div>
+    <div class="row">
+      <lucide-icon [name]="utensils" size="16" color="#7A8C96"></lucide-icon>
+      <span>1 enfant attendu (3T. - 40S.)</span>
+    </div>
+    }
+  </div>
+  <div class="column">
+    <div class="row">
+      <lucide-icon [name]="baby" size="16" color="#7A8C96"></lucide-icon>
+      <span>Aucun allaitement</span>
+    </div>
+    <div class="row">
+      <lucide-icon [name]="syringe" size="16" color="#7A8C96"></lucide-icon>
+      <span>Pas de directive...</span>
+    </div>
+    @if(!isSmall){
+    <div class="row warning">
+      <lucide-icon
+        [name]="triangleAlert"
+        size="16"
+        color="#e9581e"
+      ></lucide-icon>
+      <span>Alcoolisme</span>
+    </div>
+    <div class="row">
+      <lucide-icon
+        [name]="squareActivity"
+        size="16"
+        color="#7A8C96"
+      ></lucide-icon>
+      <span>Isolement respir...</span>
+    </div>
+    }
+  </div>
+</div>
